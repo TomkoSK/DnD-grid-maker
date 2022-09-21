@@ -33,7 +33,6 @@ def makeGrid(im, grid):#Takes the image of the map, and the string that has the 
     pixels = gridImg.load()
     xIndex = grid.index('x')
     pixelsBetweenLines = int(im.size[0]/int(grid[0:xIndex]))#The amount of pixels that will be between every line when drawing the grid
-    print(pixelsBetweenLines)
     for x in range(0, im.size[0], pixelsBetweenLines):#This draws all the vertical lines of the grid on the second image
         for y in range(0, im.size[1]):
             pixels[x, y] = (0, 0, 0, 255)
