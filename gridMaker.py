@@ -27,7 +27,7 @@ def getGridSizes(im):#Gets all possible grid sizes for a given image
     gridSizes.reverse()#The list looks nicer when it goes from the lowest to the highest grid size
     return gridSizes
 
-def makeGrid(im, grid):
+def makeGrid(im, grid):#Takes the image of the map, and the string that has the grid (like '12x12')
     im = im.convert('RGBA')
     gridImg = Image.new('RGBA', size=im.size, color=(0, 0, 0, 0,))#Makes an image that the grid will be drawn on, which will be merged with the map image later
     pixels = gridImg.load()
