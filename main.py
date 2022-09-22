@@ -14,6 +14,7 @@ if(not imgName):
     print('Couldn\'t find any images in the input directory, exiting...')
     exit()
 im = Image.open(f'input/{imgName}')
+print(f'Opened {imgName}')
 gridSizeList = gridMaker.getGridSizes(im)
 bigGridSizeString = ''
 for size in gridSizeList:
