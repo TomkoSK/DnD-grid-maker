@@ -1,6 +1,6 @@
 # DnDGridMaker
 
-A program that can make a grid for you Dungeons & Dragons map it it doesn't have one yet.
+A program that can make a grid for you Dungeons & Dragons map if it doesn't have one yet.
 
 ## Usage:
 Put the map image into the input directory, and run main.py
